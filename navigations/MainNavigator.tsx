@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import WelcomeScreen from "../pages/WelcomeScreen";
-import Formulario1Screen from "../pages/Formulario1Screen";
-import Formulario2Screen from "../pages/Formulario2Screen";
-import Formulario3Screen from "../pages/Formulario3Screen";
+import {Formulario1Screen} from "../pages/Formulario1Screen";
+import {Formulario2Screen} from "../pages/Formulario2Screen";
+import {Formulario3Screen} from "../pages/Formulario3Screen";
 import { NavigationContainer } from "@react-navigation/native";
 
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";

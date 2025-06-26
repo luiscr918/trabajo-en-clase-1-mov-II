@@ -9,7 +9,7 @@ interface Usuario {
   telefono: string;
   contrasenia: string;
 }
-const Formulario1Screen = () => {
+export const Formulario1Screen = () => {
   //objeto con mis datos
   const [usuarioPrueba, setUsuarioPrueba] = useState<Usuario>({
     nombre: '',
@@ -37,6 +37,15 @@ const Formulario1Screen = () => {
       + usuarioPrueba.email + "\n"
       + usuarioPrueba.telefono
     )
+    setUsuarioPrueba({
+      ...usuarioPrueba,
+      nombre: '',
+      apellido: '',
+      email: '',
+      telefono: '',
+      contrasenia: ''
+    })
+    setConfContra('')
   }
   return (
     <ImageBackground
@@ -132,7 +141,6 @@ const Formulario1Screen = () => {
   );
 };
 
-export default Formulario1Screen;
 
 const styles = StyleSheet.create({
   btn: {
